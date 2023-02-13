@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;700;800&family=Nunito+Sans:ital,wght@0,300;0,400;0,900;1,200;1,300;1,400&family=Pacifico&display=swap');
 body{
     font-family:sans-serif;
     font-size:19px;
@@ -10,4 +11,49 @@ body{
 h1{
     margin: 10px;
     text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+p{
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    padding: 15px;
+    box-shadow:2px 0px 20px 12px rgb(241 170 170 / 66%);
+    border-radius: 30px;
+    min-height: 150px;
+    width: 80%;
+    margin: 0 auto;
+}
+.items{
+    width: 90%;
+    margin: 0 auto;
+    padding:20px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "l1 l1"
+    "vi l2";
+    align-content: center;
+    justify-items: center;
+}
+.item1{
+    margin: 5px 0;
+    width: 33%;
+    height: 160px;
+    padding: 10px;
+    background: saddlebrown;
+}
+.item2{
+    margin: 5px 0;
+    width:33%;
+    height: 160px;
+    background: salmon;
+}
+.item3{
+    margin: 5px 0px;
+    width:33%;
+    height: 160px;
+    background: teal;
+    grid-area:l2;
 }
